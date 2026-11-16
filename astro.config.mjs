@@ -7,6 +7,11 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'My Docs',
+			customCss: [
+				'./src/styles/custom.css',
+				'@fontsource/ibm-plex-serif/400.css',
+				'@fontsource/ibm-plex-serif/600.css',
+			],
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
 			sidebar: [
 				{
