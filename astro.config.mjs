@@ -7,6 +7,10 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'My Docs',
+			routeMiddleware: './src/routeData.ts',
+			components: {
+				SocialIcons: './src/components/EmailLink.astro'
+			},
 			customCss: [
 				'./src/styles/custom.css',
 				'@fontsource/ibm-plex-serif/400.css',
